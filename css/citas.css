@@ -1,0 +1,262 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #8bbdff;
+}
+h1{
+    
+    text-align: center;
+    color: #0d4251;
+
+}
+.titulo{
+    position: relative;
+    top: -35px;
+    left: 400px;
+    margin-top: 15px;
+}
+
+
+
+.contenedor{
+    background-color: white;
+    width: 900px;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.contenedor .header-tools{
+    border:solid 1px #272a2b;
+    display: flex;
+    padding: 10px;
+    align-items: baseline;
+    
+}
+
+.contenedor .header-tools .searhc{
+    position: relative;
+    width: 35%;
+    left: -75px;
+
+}
+#buscar{
+    position: relative;
+    top: 7px;
+}
+
+.contenedor .header-tools .searhc .search-input{
+    width: 100%;
+    height: 29px;
+    background-color:#dcf1fa;
+    border: #0d4251 1px solid;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    left: 31px;
+    top: -23px;
+  
+}
+
+.contenedor .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.contenedor .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0;
+    align-items:baseline;
+}
+
+
+.contenedor .header-tools .tools ul li button{
+font-family: 'Ubuntu', sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: bolder;
+width: 55%;
+height: 40px;
+box-sizing: border-box;
+border: none;
+background-color: #5886E8;
+color: white;
+border-radius: 20px;
+cursor: pointer;
+
+margin-left:250px;
+margin-top: 13px;
+position: relative;
+top: 8px;
+}
+
+.icon{
+    position: relative;
+    top: 5px;
+}
+
+
+/*tablas*/
+
+.contenedor .datatable{
+    border-collapse:collapse ;
+    width: 100%;
+}
+.contenedor .datatable,
+.contenedor .datatable th,
+.contenedor .datatable td{
+    padding:10px;
+}
+
+.contenedor .datatable th{
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+    color: #0d4251;
+    border-bottom:solid 1px #0d4251 ;
+    border-left:solid 1px #0d4251  ;
+    border-right: solid 1px #0d4251;
+    background: #e3e3e3;
+    
+ 
+}
+
+.contenedor .datatable td{
+    color: #0d4251;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    border-bottom:solid 1px #0d4251 ;
+    border-left:solid 1px #0d4251 ;
+    border-right: solid 1px #0d4251;
+   
+}
+.contenedor .datatable tbody tr{
+    background-color: #E8F7FF;
+}
+.contenedor .datatable tbody tr:hover{
+    background-color: #e3e3e3;
+}
+
+
+.contenedor .datatable tbody tr .available::after,
+.contenedor .datatable tbody tr .away ::after,
+.contenedor .datatable tbody tr .offline::after{
+    display: inline-block;
+    vertical-align: middle;
+}
+.contenedor .datatable tbody tr .available::after{
+    content: 'Pendiente';
+    color: #F5DB1E;
+}
+.contenedor .datatable tbody tr .away::after{
+    content: 'Pospuesta';
+    color: #B007ED;
+}
+.contenedor .datatable tbody tr .offline::after{
+    content: 'Cancelada';
+    color: red;
+}
+.btt{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.btt2{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.btt3{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+/*pestaña emergente botones*/
+h3{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+.modal .formulario1{
+    display: flex;
+    flex-wrap: wrap;
+    border: #E3E3E3 3px solid;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin-left:40px;
+    margin-bottom: 35px;
+
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    margin: 5px ;
+    
+}
+.field label{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.field input {
+    font-size: 1.1rem;
+    background-color: #E3E3E3;
+    border: none;
+}
+.Modal-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.bt2{
+    border-radius: 15px;
+    background-color: #5886E8;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.bt1{
+    margin-left: 680px;
+    margin-top: 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.modal{
+    background-color: white;
+    width: 750px;
+    max-width: 100%;
+    position: relative;
+    top: -100px;
+    box-shadow:rgba(0, 0, 0, 0.2) ;
+    
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
